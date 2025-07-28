@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD Verde</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Opciones</h2>
+        <ul>
+          <li><a href="#">Buscar</a></li>
+          <li><a href="#">Añadir</a></li>
+          <li><a href="#">Eliminar</a></li>
+        </ul>
+      </aside>
+
+      <main class="crud-container">
+        <h1>Gestión de Usuarios</h1>
+
+        <form class="crud-form">
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Correo">
+          <input type="text" placeholder="Rol">
+          <button type="submit">Crear</button>
+        </form>
+
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Rol</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Juan Pérez</td>
+              <td>juan@mail.com</td>
+              <td>Admin</td>
+              <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
